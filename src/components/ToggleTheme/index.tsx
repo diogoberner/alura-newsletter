@@ -14,7 +14,6 @@ const ToggleTheme = () => {
 
   const toggle = () => {
     document.documentElement.classList.toggle("dark");
-    console.log("toggled theme");
   };
 
   return (
