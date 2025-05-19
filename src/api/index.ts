@@ -1,8 +1,7 @@
-const API_URL =
-  "https://raw.githubusercontent.com/cardozov/alura-newsletter/aula3/articles.json";
+const API_URL = "http://localhost:3001";
 
 export const getArticles = async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(API_URL + "/articles");
   const data = await response.json();
   return data;
 };

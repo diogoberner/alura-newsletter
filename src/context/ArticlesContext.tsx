@@ -9,7 +9,7 @@ type ArticlesContextType = {
 
 const defaultValue: ArticlesContextType = {
   articles: [],
-  setArticles: () => [],
+  setArticles: () => {},
 };
 
 export const ArticlesContext = createContext<ArticlesContextType>(defaultValue);
