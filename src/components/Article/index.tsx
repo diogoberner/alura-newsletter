@@ -2,7 +2,7 @@ import type { IArticle } from "../../types/shared";
 
 const Article = ({ title, text, image, alt, tags }: IArticle) => {
   return (
-    <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex flex-col gap-2 items-center">
+    <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-md flex gap-2 flex-col items-center sm:hover:shadow-gray-500 sm:hover:dark:shadow-black sm:hover:shadow-lg">
       <h3 className="text-xl text-alura-200 dark:text-gray-200 font-bold">
         {title}
       </h3>
@@ -10,7 +10,7 @@ const Article = ({ title, text, image, alt, tags }: IArticle) => {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="bg-alura-100 dark:bg-dark-100 text-gray-200 text-bold text-xs uppercase px-4 py-1 rounded-full"
+            className="bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:scale-110 hover:bg-gradient-to-r hover:from-alura-200"
           >
             {tag}
           </span>

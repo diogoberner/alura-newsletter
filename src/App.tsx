@@ -9,9 +9,10 @@ function App() {
   const hasUser = Boolean(user);
 
   return (
-    <div className="App">
+    <div className="h-screen">
       <Header user={user} />
-      {!hasUser ? <Form onSubmit={setUser} /> : <ArticleList />}
+      {hasUser && <ArticleList />}
+      {hasUser || <Form onSubmit={setUser} />}
     </div>
   );
 }
